@@ -1,0 +1,288 @@
+*{
+	margin:0;
+	padding:0;
+	list-style: none;
+	text-decoration: none;
+	background-repeat: no-repeat;
+}
+html,body{
+	position: relative;
+	height: 100%;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-size: 62.5%;
+}
+.swiper-container{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.page1{
+	position: relative;
+	background-image: url(../img/bg1.png);
+	background-size: 100% 100%;
+}
+.goBtn{
+	position: absolute;
+	width: 348px;
+	height: 96px;
+	background-image: url(../img/goBtn.png);
+	top:83%;
+	left:23%;
+	/*left: 50%;*/
+	/*transform: translateX(-50%);*/
+}
+.goBtnA{
+	background-image: url(../img/goBtnA.png);
+}
+/*第二页*/
+.page2{
+	position: relative;
+	background-image: url(../img/bg2.png);
+	background-size: 100% 100%;
+}
+.swiper-container2{
+	position: relative;
+	width: 100%;
+	height: 50%;
+	left: 0;
+	top:5%;
+}
+.slid_ul{
+	position: relative;
+	left: 0;
+	top:0;
+	overflow: hidden;
+	/*transition: 1s;*/
+}
+.slid_ul li{
+	text-align: center;
+}
+.slid_ul img{
+	height: 100%;
+}
+.hx{
+	margin-left: 100px;
+}
+.touxiang_ul{
+	width: 100%;
+	position: absolute;
+	display: flex;
+	top:65%;
+	flex-direction: row;
+	justify-content:center;
+	overflow: hidden;
+}
+.touxiang_ul div{
+	background-image: url(../img/headBg.png);
+	text-align: center;
+}
+.touxiang_ul li:hover div{
+	background-image: url(../img/headBgA.png);
+}
+.touxiang_ul li:hover p{
+	color: red;
+}
+.touxiang_ul li{
+	float: left;
+	margin-right: 20px; 
+}
+.touxiang_ul .act{
+	margin-right: 0px; 
+}
+.touxiang_ul p{
+	text-align: center;
+	font-size: 2.4rem;
+	color: #9e9685;
+
+}
+.select{
+	position: absolute;
+	bottom:10%;
+	width: 346px;
+	height: 94px;
+	background-image: url('../img/select.png');
+	left: 50%;
+	margin-left: -173px;
+}
+.selectA{
+	background-image: url('../img/selectA.png');
+}
+/*第三页*/
+.page3{
+	position: relative;
+	background-image: url(../img/bg3.png);
+	background-size: 100% 100%;
+}
+/*得分*/
+.scoreImg{
+	width: 182px;
+	height: 99px;
+	position: absolute;
+	top:7%;
+	left:3%;
+	background-image: url('../img/SCORE.png');
+}
+
+.cloud{
+	position: absolute;
+	text-align: center;
+}
+.cloud1{
+	width: 197px;
+	height: 89px;
+	bottom: 570px;
+}
+.cloud img{
+	margin-top:-20px;
+}
+.cloud2{
+	width: 181px;
+	height: 87px;
+	bottom: 480px;
+
+}
+.cloud3{
+	width: 171px;
+	height: 93px;
+	bottom: 394px;
+}
+.cloud4{
+	width: 141px;
+	height: 69px;
+	bottom: 304px;
+}
+.cloud5{
+	width: 200px;
+	height: 85px;
+	bottom: 212px;	
+}
+.cloud6{
+	width: 189px;
+	height: 80px;
+	bottom: 120px;
+}
+.cloud7{
+	width: 147px;
+	height: 62px;
+	bottom: 60px;
+}
+.food{
+	position: absolute;
+	width:40%;
+	z-index: 5;
+	margin-left: -20%; 
+}
+.active{
+	width:100%;
+	position: absolute;
+	left: 0px;
+	top: -80px;
+	z-index: 1; 
+}
+/*开始按钮*/
+.startBtn{
+	width: 160px;
+	height: 160px;
+	position: absolute;
+	right: 5%;
+	bottom: 4%;
+	background-image: url('../img/startBtn.png');
+	z-index: 10;
+}
+/*人物*/
+.persons{
+	/*width: 226px;*/
+	/*height: 345px;*/
+	position: absolute;
+	top:4%;
+	left: 50%;
+	margin-left: -105px;
+	background-color: pink;
+	text-align: center;
+}
+.persons img{
+	width: 90%;
+}
+/*加长棍*/
+.stick{
+	position: absolute;
+	top:14%;
+	left: 36%;
+	transform-origin: 50% 70px;
+	/*-webkit-transform-origin: 50% 70px;
+	animation-name: rotateS;
+	animation-duration:2s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;*/
+}
+.stick1{
+	width:14px;
+	height: 190px;
+}
+
+.stick img{
+	display: block;
+}
+
+.stickHead{
+	position: absolute;
+	bottom: 0px;
+	margin-left: -36px;
+	width:82px;
+	height: 44px; 
+}
+.stickChange{
+	width: 14px;
+	height: 1000px;
+	/*transition: height 1s;*/
+	
+}
+
+/*.bg-black{
+	width: 100%;
+	height: 100%;
+	background-color: #777;
+	position: absolute;
+	left: 0;
+	opacity: 0.9;
+	animation-name: opacityS;
+	animation-duration:3s;
+	
+}*/
+
+
+/*自己添加的动画*/
+/*@keyframes rotateS{
+	from{
+		transform: rotate(-45deg);
+		-webkit-transform: rotate(-45deg);
+	}
+	to{
+		transform: rotate(45deg);
+		-webkit-transform: rotate(45deg);
+	}
+}
+@-webkit-keyframes rotateS{
+	from{
+		transform: rotate(-45deg);
+		-webkit-transform: rotate(-45deg);
+	}
+	to{
+		transform: rotate(45deg);
+		-webkit-transform: rotate(45deg);
+	}
+}*/
+
+/*@keyframes opacityS{
+	0%{opacity: 0.9}
+	100%{opacity:1}
+}*/
+
+
+
+
+
+
+
+
